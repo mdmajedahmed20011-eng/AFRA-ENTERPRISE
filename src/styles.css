@@ -55,39 +55,39 @@
 
 :root {
   --radius: 0.75rem;
-  /* Proper Food — Natural Organic Green + Warm Gold palette */
-  --background: oklch(0.99 0.008 90);
-  --foreground: oklch(0.18 0.04 145);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.04 145);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.04 145);
-  --primary: oklch(0.35 0.12 145);       /* Deep Mustard Field Green */
-  --primary-foreground: oklch(0.99 0.01 90);
-  --secondary: oklch(0.96 0.02 90);
-  --secondary-foreground: oklch(0.35 0.12 145);
-  --muted: oklch(0.97 0.01 90);
-  --muted-foreground: oklch(0.45 0.03 90);
-  --accent: oklch(0.92 0.06 85);
-  --accent-foreground: oklch(0.25 0.06 85);
-  --destructive: oklch(0.60 0.18 30);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.92 0.015 90);
-  --input: oklch(0.92 0.015 90);
-  --ring: oklch(0.45 0.12 145);
-  --cta: oklch(0.72 0.15 80);            /* Rich Warm Gold / Mustard Gold */
-  --cta-foreground: oklch(0.16 0.04 60);
-  --cream: oklch(0.97 0.025 85);
+  /* Afra Enterprise — Organic Deep Green, Golden Grains & Cream palette */
+  --background: #FDFAF5;
+  --foreground: #0F2818;
+  --card: #ffffff;
+  --card-foreground: #0F2818;
+  --popover: #ffffff;
+  --popover-foreground: #0F2818;
+  --primary: #1B6B3A;       /* Deep Forest Green */
+  --primary-foreground: #FDFAF5;
+  --secondary: #EAF4EC;     /* Light sage/green background */
+  --secondary-foreground: #1B6B3A;
+  --muted: #F3ECE2;
+  --muted-foreground: #5B6B5F;
+  --accent: #FDEDC9;        /* Warm gold accent background */
+  --accent-foreground: #8B5E00;
+  --destructive: #8B3A2F;   /* Earthy Red-Brown */
+  --destructive-foreground: #ffffff;
+  --border: #E6DFD5;
+  --input: #E6DFD5;
+  --ring: #1B6B3A;
+  --cta: #D4A017;            /* Rich Amber/Gold */
+  --cta-foreground: #0F2818;
+  --cream: #FDFAF5;
 }
 
 .dark {
-  --background: oklch(0.14 0.02 145);
-  --foreground: oklch(0.98 0.01 90);
-  --card: oklch(0.17 0.03 145);
-  --card-foreground: oklch(0.98 0.01 90);
-  --primary: oklch(0.75 0.12 145);
-  --primary-foreground: oklch(0.14 0.02 145);
-  --border: oklch(1 0 0 / 8%);
+  --background: #0B1910;
+  --foreground: #ECF7F0;
+  --card: #0F2317;
+  --card-foreground: #ECF7F0;
+  --primary: #2ECC71;
+  --primary-foreground: #0B1910;
+  --border: rgba(255, 255, 255, 0.08);
 }
 
 @layer base {
@@ -199,12 +199,15 @@
   pointer-events: none;
 }
 
-/* Mustard field gradient backgrounds */
-.mustard-gradient {
-  background: linear-gradient(135deg, oklch(0.35 0.12 145) 0%, oklch(0.28 0.10 145) 50%, oklch(0.22 0.08 145) 100%);
+/* Afra Enterprise gradient backgrounds */
+.afra-gradient {
+  background: linear-gradient(135deg, #1B6B3A 0%, #114F29 50%, #0B3A1C 100%);
 }
 .gold-gradient {
-  background: linear-gradient(135deg, oklch(0.78 0.15 80) 0%, oklch(0.72 0.15 80) 50%, oklch(0.65 0.14 70) 100%);
+  background: linear-gradient(135deg, #ECC45C 0%, #D4A017 50%, #B2830B 100%);
+}
+.earth-gradient {
+  background: linear-gradient(135deg, #A85A4E 0%, #8B3A2F 50%, #6E2A20 100%);
 }
 
 /* Scroll-driven reveal - always visible */

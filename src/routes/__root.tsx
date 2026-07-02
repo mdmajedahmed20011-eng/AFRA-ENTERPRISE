@@ -73,40 +73,40 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           title:
-            "Proper Food — ১০০% খাঁটি কোল্ড প্রেসড সরিষার তেল | properfood.shop",
+            "আফরা এন্টারপ্রাইজ — ১০০% অর্গানিক ও নিরাপদ পাহাড়ি ও সুগন্ধি চাল",
         },
         {
           name: "description",
           content:
-            "Proper Food থেকে পান ১০০% খাঁটি ও প্রাকৃতিক কোল্ড প্রেসড সরিষার তেল। ঘানিতে ভাঙানো পদ্ধতিতে প্রস্তুত, স্বাস্থ্যসম্মত ও পুষ্টিগুণে ভরপুর। Eat proper food and stay healthy.",
+            "আফরা এন্টারপ্রাইজ (Afra Enterprise) থেকে পান ১০০% খাঁটি ও প্রিমিয়াম অর্গানিক লাল চাল, রাতাবোরো, বাশফুল ও পাহাড়ি বিন্নি চাল। কিশোরগঞ্জ থেকে সরাসরি সংগৃহীত ও সারাদেশে ডেলিভারি।",
         },
-        { name: "author", content: "Proper Food" },
+        { name: "author", content: "Afra Enterprise" },
         {
           property: "og:title",
           content:
-            "Proper Food — ১০০% খাঁটি কোল্ড প্রেসড সরিষার তেল",
+            "আফরা এন্টারপ্রাইজ — অর্গানিক ও নিরাপদ চালের বিশ্বস্ত নাম",
         },
         {
           property: "og:description",
           content:
-            "ঘানিতে ভাঙানো ১০০% খাঁটি সরিষার তেল। প্রাকৃতিক, কেমিক্যালমুক্ত ও পুষ্টিগুণে ভরপুর। সারা বাংলাদেশে ডেলিভারি।",
+            "শতভাগ প্রিমিয়াম অর্গানিক ও কেমিক্যালমুক্ত লাল চাল ও সুগন্ধি চাল। সরাসরি কৃষকের মাঠ থেকে কিশোরগঞ্জ হয়ে আপনার রান্নাঘরে।",
         },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://properfood.shop" },
+        { property: "og:url", content: "https://afraenterprise1.com" },
         { name: "twitter:card", content: "summary_large_image" },
         {
           name: "twitter:title",
-          content: "Proper Food — ১০০% খাঁটি কোল্ড প্রেসড সরিষার তেল",
+          content: "আফরা এন্টারপ্রাইজ — অর্গানিক ও নিরাপদ চাল",
         },
         {
           name: "twitter:description",
           content:
-            "ঘানিতে ভাঙানো ১০০% খাঁটি সরিষার তেল। প্রাকৃতিক, কেমিক্যালমুক্ত ও পুষ্টিগুণে ভরপুর।",
+            "ডায়াবেটিস নিয়ন্ত্রণ, ওজন কমানো ও সুস্থতায় ১০০% খাঁটি প্রিমিয়াম অর্গানিক চাল।",
         },
         {
           name: "keywords",
           content:
-            "সরিষার তেল, mustard oil, cold pressed, কোল্ড প্রেসড, ঘানি, খাঁটি তেল, proper food, properfood, বাংলাদেশ, রাজশাহী, নওগাঁ",
+            "আফরা এন্টারপ্রাইজ, afra enterprise, অর্গানিক চাল, লাল চাল, রাতাবোরো, বাশফুল চাল, বাশফুল, ডায়াবেটিস চাল, ওজন কমানো চাল, কিশোরগঞ্জ চাল, organic rice bangladesh, লাল গঞ্জিয়া চাল, বিন্নি চাল",
         },
       ],
       links: [
