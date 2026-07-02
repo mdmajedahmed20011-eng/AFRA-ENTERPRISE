@@ -697,44 +697,45 @@ function Index() {
         </div>
       </section>
 
+
       {/* ═══════════ COMPARISON TABLE ═══════════ */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="mb-16 text-center max-w-2xl mx-auto">
+          <div className="mb-12 text-center max-w-2xl mx-auto">
             <span className="text-[#1B6B3A] text-xs font-black bg-green-50 px-4 py-1.5 rounded-full border border-green-100">তুলনামূলক বিশ্লেষণ</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-[#0F2818] tracking-tight mt-5">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#0F2818] tracking-tight mt-5">
               আফরা অর্গানিক চাল বনাম সাধারণ চাল
             </h2>
-            <p className="text-slate-500 font-semibold mt-3">ভেজাল ও কেমিক্যাল পলিশিংয়ের পার্থক্য নিজে যাচাই করুন</p>
+            <p className="text-slate-500 text-sm font-semibold mt-3">ভেজাল ও কেমিক্যাল পলিশিংয়ের পার্থক্য নিজে যাচাই করুন</p>
           </div>
-          <div className="max-w-4xl mx-auto overflow-hidden rounded-3xl border border-green-100 shadow-xl">
-            <table className="w-full text-sm sm:text-base">
+          <div className="max-w-4xl mx-auto overflow-x-auto rounded-3xl border border-green-100 shadow-xl scrollbar-none">
+            <table className="w-full text-xs sm:text-base min-w-[500px]">
               <thead>
                 <tr className="bg-[#1B6B3A] text-white">
-                  <th className="text-left px-6 py-5 font-bold">বৈশিষ্ট্য</th>
-                  <th className="text-center px-4 py-5 font-bold">
-                    <span className="inline-flex items-center gap-1.5"><Wheat className="h-5 w-5 text-amber-300" /> আফরা এন্টারপ্রাইজ</span>
+                  <th className="text-left px-4 sm:px-6 py-4 sm:py-5 font-bold">বৈশিষ্ট্য</th>
+                  <th className="text-center px-3 sm:px-4 py-4 sm:py-5 font-bold">
+                    <span className="inline-flex items-center gap-1.5"><Wheat className="h-4 w-4 sm:h-5 sm:w-5 text-amber-300" /> আফরা</span>
                   </th>
-                  <th className="text-center px-4 py-5 font-bold text-green-200">বাজারের সাধারণ চাল</th>
+                  <th className="text-center px-3 sm:px-4 py-4 sm:py-5 font-bold text-green-200">বাজারের সাধারণ চাল</th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonTable.map((row, i) => (
                   <tr key={i} className={`border-b border-green-50 ${i % 2 === 0 ? 'bg-white' : 'bg-green-50/20'}`}>
-                    <td className="px-6 py-5 font-bold text-slate-700 text-left">{row.feat}</td>
-                    <td className="text-center px-4 py-5">
-                      <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-green-100 text-[#1B6B3A] border border-green-200">
-                        <Check className="h-5 w-5" />
+                    <td className="px-4 sm:px-6 py-4 sm:py-5 font-bold text-slate-700 text-left">{row.feat}</td>
+                    <td className="text-center px-3 sm:px-4 py-4 sm:py-5">
+                      <span className="inline-flex items-center justify-center h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-green-100 text-[#1B6B3A] border border-green-200">
+                        <Check className="h-3.5 w-3.5 sm:h-5 sm:w-5" />
                       </span>
                     </td>
-                    <td className="text-center px-4 py-5">
+                    <td className="text-center px-3 sm:px-4 py-4 sm:py-5">
                       {row.them ? (
-                        <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-green-100 text-[#1B6B3A]">
-                          <Check className="h-5 w-5" />
+                        <span className="inline-flex items-center justify-center h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-green-100 text-[#1B6B3A]">
+                          <Check className="h-3.5 w-3.5 sm:h-5 sm:w-5" />
                         </span>
                       ) : (
-                        <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-red-50 text-red-500 border border-red-100">
-                          <X className="h-5 w-5" />
+                        <span className="inline-flex items-center justify-center h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-red-50 text-red-500 border border-red-100">
+                          <X className="h-3.5 w-3.5 sm:h-5 sm:w-5" />
                         </span>
                       )}
                     </td>
@@ -746,46 +747,48 @@ function Index() {
         </div>
       </section>
 
+
+
       {/* ═══════════ VIDEO SECTION ═══════════ */}
-      <section className="py-20 bg-green-50/20 border-y border-green-100/30">
+      <section className="py-16 sm:py-24 bg-green-50/20 border-y border-green-100/30">
         <div className="container mx-auto px-4 text-center">
-          <span className="text-[#1B6B3A] text-xs font-black uppercase tracking-widest bg-green-50 border border-green-100 px-4 py-1.5 rounded-full">আমাদের মিল ও চাল ভাঙানোর ভিডিও</span>
+          <span className="text-[#1B6B3A] text-xs font-black uppercase tracking-widest bg-green-50 border border-green-100 px-4 py-1.5 rounded-full">আমাদের ভিডিও গ্যালারি</span>
           <h2 className="text-3xl sm:text-4xl font-black text-[#0F2818] tracking-tight mt-5 mb-4">
             কীভাবে তৈরি হয় আপনার চাল?
           </h2>
-          <p className="text-slate-500 font-semibold mb-10 max-w-xl mx-auto">কৃষকদের থেকে ধান নিয়ে সম্পূর্ণ অর্গানিক উপায়ে প্রস্তুত করার লাইভ দৃশ্য</p>
+          <p className="text-slate-500 text-sm font-semibold mb-12 max-w-xl mx-auto">কৃষকদের থেকে ধান নিয়ে সম্পূর্ণ অর্গানিক উপায়ে প্রস্তুত করার লাইভ দৃশ্য</p>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto justify-center">
             {/* Video 1 */}
-            <div className="bg-white p-4 rounded-3xl border border-green-100 shadow-lg">
-              <h4 className="font-extrabold text-base mb-3 text-[#1B6B3A]">ধান ভাঙানোর অটো মিল প্রক্রিয়া</h4>
-              <div className="rounded-2xl overflow-hidden shadow-inner border border-green-100 relative">
+            <div className="bg-white p-4 sm:p-5 rounded-3xl border border-green-100/80 shadow-xl max-w-[340px] mx-auto w-full flex flex-col text-left">
+              <div className="rounded-2xl overflow-hidden shadow-2xl relative aspect-[4/5] bg-black flex items-center justify-center border border-slate-100">
                 <video
                   controls
-                  poster={riceBanner}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                   preload="metadata"
                 >
                   <source src={afraVideo1} type="video/mp4" />
                   আপনার ব্রাউজার ভিডিও সাপোর্ট করে না।
                 </video>
               </div>
+              <h4 className="font-black text-base mt-4 text-[#1B6B3A] text-center">ধান ভাঙানোর অটো মিল প্রক্রিয়া</h4>
+              <p className="text-xs text-slate-500 text-center mt-1 font-semibold">মিল থেকে সরাসরি চাল ভাঙানোর প্রসেস</p>
             </div>
 
             {/* Video 2 */}
-            <div className="bg-white p-4 rounded-3xl border border-green-100 shadow-lg">
-              <h4 className="font-extrabold text-base mb-3 text-[#1B6B3A]">আফরা অর্গানিক চাল প্রোমো</h4>
-              <div className="rounded-2xl overflow-hidden shadow-inner border border-green-100 relative">
+            <div className="bg-white p-4 sm:p-5 rounded-3xl border border-green-100/80 shadow-xl max-w-[340px] mx-auto w-full flex flex-col text-left">
+              <div className="rounded-2xl overflow-hidden shadow-2xl relative aspect-[4/5] bg-black flex items-center justify-center border border-slate-100">
                 <video
                   controls
-                  poster={redRice}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                   preload="metadata"
                 >
                   <source src={afraVideo2} type="video/mp4" />
                   আপনার ব্রাউজার ভিডিও সাপোর্ট করে না।
                 </video>
               </div>
+              <h4 className="font-black text-base mt-4 text-[#1B6B3A] text-center">আফরা অর্গানিক চাল প্রোমো</h4>
+              <p className="text-xs text-slate-500 text-center mt-1 font-semibold">আমাদের চালের বিশেষত্ব ও পরিচিতি</p>
             </div>
           </div>
         </div>
@@ -955,13 +958,7 @@ function Index() {
                     </div>
                   </div>
                   
-                  {/* Prices are inbox-based, showing user rates request indicator */}
-                  <div className="bg-amber-50 rounded-2xl p-3.5 border border-amber-100 text-left flex items-start gap-2.5">
-                    <HelpIcon className="h-5 w-5 text-amber-700 shrink-0 mt-0.5" />
-                    <p className="text-xs font-bold text-amber-900 leading-relaxed">
-                      আফরা এন্টারপ্রাইজের চালের দাম বাজার অনুযায়ী পরিবর্তিত হয়। আজকের সঠিক রেট ও ডেলিভারি চার্জ জানতে আমাদের প্রতিনিধি আপনার অর্ডার সাবমিট হওয়ামাত্র হোয়াটসঅ্যাপে যোগাযোগ করবেন।
-                    </p>
-                  </div>
+
                 </div>
 
                 <div className="space-y-4">
